@@ -42,7 +42,7 @@ jobs:
             tests_log.xml
             
       - name: Publish Test Report
-        uses: mikepenz/action-junit-report@v4
+        uses: mikepenz/action-junit-report@v5
         if: success() || failure()
         with:
           report_paths: 'tests_*.xml'
