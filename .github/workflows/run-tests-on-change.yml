@@ -33,7 +33,7 @@ jobs:
           sed -i "s/\/app\//\/github\/workspace\//g" tests_coverage.xml tests_log.xml
 
       - name: Upload logging artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         if: success() || failure()
         with:
           name: test_coverage_and_logging
